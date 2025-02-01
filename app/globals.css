@@ -30,3 +30,31 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+#container {
+
+}
+
+.Pastel-de-nata {
+  position: absolute;
+  animation: tomber 5s infinite;
+  transform-origin: center;
+}
+
+.poulet {
+  position: absolute;
+  animation: tomber 5s infinite;
+  transform-origin: center;
+  z-index: -1;
+}
+
+@keyframes tomber {
+  0% {
+    top: -100px; /* Commence au-dessus de la fenêtre */
+   
+  }
+  100% {
+    top: 100vh; /* Atteint le bas de la fenêtre */
+ 
+  }
+}
