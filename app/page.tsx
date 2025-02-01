@@ -8,7 +8,7 @@ export default function Home() {
         <div className={styles.mainTitleContainer}>
           <h1 className={styles.mainTitle}>La Quinta</h1>
           <h2 className={styles.mainSubtitle}>Traiteur portugais</h2>
-          <Image src="/roasted-chicken.png" alt="chicken" width={400} height={400}></Image>
+          <Image src="/laquinta/roasted-chicken.png" alt="chicken" width={400} height={400}></Image>
         </div>
       </main>
       <footer className={styles.footer}>
