@@ -1,14 +1,46 @@
+@font-face {
+  font-family: "MsMadi";
+  src: url("/laquinta/fonts/MsMadi-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .page {
   display: grid;
   grid-template-rows: 20px 1fr 20px;
   align-items: start;
   justify-items: center;
   min-height: 100svh;
-  padding: 80px;
-  padding-top: 0px;
-  gap: 64px;
+  padding-bottom: 1px;
   font-family: var(--font-geist-sans);
   caret-color: transparent;
+}
+
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  grid-row-start: 1;
+  border-bottom: 1px solid var(--primary);
+}
+
+.header > * {
+  font-family: "MsMadi", sans-serif;
+  font-weight: 900;
+  font-size: 64px;
+  padding: 32px;
+  color: var(--primary);
+}
+
+#followHeader {
+  border-right: 1px solid var(--primary);
+}
+
+#carteHeader {
+  border-left: 1px solid var(--primary);
 }
 
 .main {
@@ -17,6 +49,7 @@
   align-items: start;
   justify-content: start;
   grid-row-start: 2;
+  margin-top: 128px;
 }
 
 .footer {
@@ -33,7 +66,7 @@
 
 
 .mainTitle {
-  font-size: 128px;
+  font-size: 374px;
   font-weight: 900;
   text-align: center;
   color: var(--primary);
@@ -41,12 +74,21 @@
 }
 
 .mainSubtitle {
-  font-size: 64px;
+  font-family: "MsMadi", sans-serif;
+  font-size: 256px;
   text-align: center;
   /* font-weight: 900; */
   text-align: center;
-  margin-top: -20px;
+  margin-top: -96px;
   color: var(--secondary);
+}
+
+.mainImageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 128px;
 }
 
 @media (max-width: 600px) {

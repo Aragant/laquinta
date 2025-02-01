@@ -17,6 +17,7 @@ export const metadata: Metadata = {
   description: "La Quinta - Traiteur portugais",
 };
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
