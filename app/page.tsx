@@ -98,7 +98,11 @@ export default function Home() {
             <h3 className={styles.weekTitle}>DIMANCHE</h3>
             <p className={styles.weekHoraire}>9h - 14h</p>
             <p className={styles.addressText}>20 RUE MAURICE BERTEAUX,<br />78700 CONFLANS-SAINT-<br />HONORINE</p>
+
+            <Image className={styles.bomApetite} src={"/laquinta/bomApetite.png"} alt="bom apetite" width={300} height={200}></Image>
+
           </div>
+
 
           <p className={styles.textPresentation}>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi

@@ -201,6 +201,10 @@
   color: var(--primary);
 }
 
+.bomApetite {
+  margin-top: 64px;
+}
+
 .textPresentation {
   padding: 0px 30vw;
   margin-top: 512px;
