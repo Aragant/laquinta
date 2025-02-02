@@ -5,22 +5,22 @@ import styles from "./page.module.css";
 import { useEffect, useState } from "react";
 
 export default function Home() {
-    const [isSticky, setIsSticky] = useState(true);
-    const [finalTop, setFinalTop] = useState(0); // Position finale une fois sticky désactivé
-  
-    useEffect(() => {
-      const handleScroll = () => {
-        if (window.scrollY < 2050) {
-          setIsSticky(true);
-        } else {
-          setIsSticky(false);
-          setFinalTop(2050); // Fixe la position à 2050px
-        }
-      };
-  
-      window.addEventListener("scroll", handleScroll);
-      return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+  const [isSticky, setIsSticky] = useState(true);
+  const [finalTop, setFinalTop] = useState(0); // Position finale une fois sticky désactivé
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY < 2050) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+        setFinalTop(2050); // Fixe la position à 2050px
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <div className={styles.page}>
@@ -37,15 +37,35 @@ export default function Home() {
       </div>
 
       <main className={styles.main}>
-        <div
-          className={styles.mainContainer}
-        >
-          <div className={`${styles.mainTitleContainer} ${isSticky ? styles.sticky : styles.relative}`}
-          style={!isSticky ? { top: `${finalTop}px` } : {}}
+        <div className={styles.mainContainer}>
+          <div
+            className={`${styles.mainTitleContainer} ${
+              isSticky ? styles.sticky : styles.relative
+            }`}
+            style={!isSticky ? { top: `${finalTop}px` } : {}}
           >
             <h1 className={styles.mainTitle}>La Quinta</h1>
-            <h2 className={styles.mainSubtitle}>traiteur portugais</h2>
+            <div className={styles.mainSubtitleContainer}>
+
+            <div className={styles.roundedFirstBorder}>
+              <div className={styles.roudedSecondBorder}>
+                <div className={styles.roundedEdge}> CONFLANS<br />ST<br />HONORINE</div>
+              </div>
+            </div>
+
+              <h2 className={styles.mainSubtitle}>traiteur portugais</h2>
+
+              <div className={styles.roundedFirstBorder}>
+              <div className={styles.roudedSecondBorder}>
+                <div className={styles.roundedEdge}>SINCE<br />2025</div>
+              </div>
+            </div>
+            </div>
+
+
+            
           </div>
+
           <div className={styles.mainImageContainer}>
             <Image
               src="/laquinta/roasted-chicken.png"
@@ -67,6 +87,19 @@ export default function Home() {
             ></Image>
           </div>
 
+          <div className={styles.horaireAddressContainer}>
+            <h2 className={styles.horaireTitle}>
+              Nos Horaire
+            </h2>
+            <h3 className={styles.weekTitle}>MERCREDI AU VENDREDI</h3>
+            <p className={styles.weekHoraire}>10h - 14h / 15h30 - 20h</p>
+            <h3 className={styles.weekTitle}>SAMEDI</h3>
+            <p className={styles.weekHoraire}>9h - 14h / 15h30 - 20h</p>
+            <h3 className={styles.weekTitle}>DIMANCHE</h3>
+            <p className={styles.weekHoraire}>9h - 14h</p>
+            <p className={styles.addressText}>20 RUE MAURICE BERTEAUX,<br />78700 CONFLANS-SAINT-<br />HONORINE</p>
+          </div>
+
           <p className={styles.textPresentation}>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi
             sed animi facere et commodi consectetur aliquam voluptatum ullam
@@ -81,9 +114,7 @@ export default function Home() {
             dolorem quo modi nobis vero.
           </p>
 
-          <div className={styles.bigDiv}>
-
-          </div>
+          <div className={styles.bigDiv}></div>
         </div>
       </main>
       <footer className={styles.footer}>

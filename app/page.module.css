@@ -94,13 +94,64 @@
 
 .mainSubtitle {
   font-family: "MsMadi", sans-serif;
-  font-size: 256px;
+  font-size: 224px;
   text-align: center;
   text-align: center;
   color: var(--secondary);
   margin-bottom: 64px;
   line-height: 0.6;
 }
+
+.mainSubtitleContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between	;
+}
+
+.roundedEdge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--background);
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+
+  height: 150px;
+  aspect-ratio: 3/2;
+   /* update the 85% to control the curvature */
+  clip-path: ellipse(60% 50%);
+  /* or clip-path: ellipse(85% 50% at 50% 50%) if you want to adjust the position */
+  background: var(--primary);
+  
+}
+
+
+.roudedSecondBorder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 155px;
+  aspect-ratio: 3/2;
+   /* update the 85% to control the curvature */
+  clip-path: ellipse(60% 50%);
+  /* or clip-path: ellipse(85% 50% at 50% 50%) if you want to adjust the position */
+  background: var(--background);
+}
+
+.roundedFirstBorder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 170px;
+  aspect-ratio: 3/2;
+   /* update the 85% to control the curvature */
+  clip-path: ellipse(60% 50%);
+  /* or clip-path: ellipse(85% 50% at 50% 50%) if you want to adjust the position */
+  background: var(--primary);
+}
+
 
 .mainImageContainer {
   z-index: -20;
@@ -109,6 +160,45 @@
   align-items: center;
   justify-content: center;
   gap: 128px;
+}
+
+.horaireAddressContainer {
+  margin-top: 320px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.horaireTitle {
+  text-align: center;
+  font-family: 'MsMadi', sans-serif;
+  font-size: 64px;
+  color: var(--secondary);
+}
+
+.weekTitle {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.weekHoraire {
+  font-family: 'MsMadi', sans-serif;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 900;
+  color: var(--secondary);
+}
+
+.addressText {
+  padding: 0px 64px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--primary);
 }
 
 .textPresentation {
