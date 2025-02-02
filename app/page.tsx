@@ -6,7 +6,7 @@ export default function Home() {
     <div className={styles.page}>
         <div className={styles.header}>
           <p id={styles.followHeader}>Follow</p>
-          <p>logo</p>
+          <Image id={styles.logo} src="/laquinta/barcelos.png" alt="logo" width={150} height={150}></Image>
           <p id={styles.carteHeader}>Carte</p>
         </div>
 

@@ -43,6 +43,10 @@
   border-left: 1px solid var(--primary);
 }
 
+#logo {
+  padding: 16px;
+}
+
 .main {
   display: flex;
   flex-direction: column;
