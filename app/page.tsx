@@ -10,11 +10,13 @@ export default function Home() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY < 2050) {
+      const scrollLimit = window.innerWidth < 481 ? 800 : 2000;
+
+      if (window.scrollY < scrollLimit) {
         setIsSticky(true);
       } else {
         setIsSticky(false);
-        setFinalTop(2050); // Fixe la position à 2050px
+        setFinalTop(scrollLimit + 80); // Fixe la position à 2050px
       }
     };
 
@@ -30,8 +32,7 @@ export default function Home() {
           id={styles.logo}
           src="/laquinta/barcelos.png"
           alt="logo"
-          width={150}
-          height={150}
+          fill
         ></Image>
         <p id={styles.carteHeader}>Carte</p>
       </div>
@@ -113,30 +114,37 @@ export default function Home() {
               HONORINE
             </p>
 
-            {/* <Image
-              className={styles.bomApetite}
-              src={"/laquinta/bomApetite.png"}
-              alt="bom apetite"
-              width={300}
-              height={200}
-            ></Image> */}
+            <div className={styles.bomApetiteContainer}>
+              <Image
+                className={styles.bomApetite}
+                src={"/laquinta/bomApetite.png"}
+                alt="bom apetite"
+                fill
+              ></Image>
+            </div>
           </div>
 
-          {/* <div className={styles.funContainer}>
+          <div className={styles.funContainer}>
             <div className={styles.funTextContainer}>
               <div className={styles.funSubTextContainer}>
                 <p className={styles.funText}>Nous avons des...</p>
                 <p className={styles.funFood}>POULETS</p>
               </div>
 
-              <div className={`${styles.funSubTextContainer} ${styles.funTextMidle}`}>
+              <div
+                className={`${styles.funSubTextContainer} ${styles.funTextMidle}`}
+              >
                 <p className={styles.funText}>Nous avons des...</p>
                 <p className={styles.funFood}>PATATES</p>
               </div>
 
               <div className={styles.funSubTextContainer}>
                 <p className={styles.funText}>Nous avons des...</p>
-                <p className={styles.funFood}>POULET AVEC<br />DES PATATES</p>
+                <p className={styles.funFood}>
+                  POULET AVEC
+                  <br />
+                  DES PATATES
+                </p>
               </div>
             </div>
             <div className={styles.funImageContainer}>
@@ -147,9 +155,9 @@ export default function Home() {
                 style={{ objectFit: "cover" }}
               ></Image>
             </div>
-          </div> */}
+          </div>
 
-          {/* <p className={styles.textPresentation}>
+          <p className={styles.textPresentation}>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi
             sed animi facere et commodi consectetur aliquam voluptatum ullam
             reprehenderit iusto, molestias fugit incidunt! Dignissimos beatae
@@ -161,7 +169,7 @@ export default function Home() {
             animi facere et commodi consectetur aliquam voluptatum ullam
             reprehenderit iusto, molestias fugit incidunt! Dignissimos beatae
             dolorem quo modi nobis vero.
-          </p> */}
+          </p>
 
           <div className={styles.bigDiv}></div>
         </div>
