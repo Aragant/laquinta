@@ -75,27 +75,30 @@ export default function Home() {
           </div>
 
           <div className={styles.mainImageContainer}>
-            <Image
-              className={styles.funImage}
-              src="/laquinta/roasted-chicken.png"
-              alt="chicken"
-              width={600}
-              height={600}
-            ></Image>
-            <Image
-              className={styles.funImage}
-              src="/laquinta/potatoes.png"
-              alt="chicken"
-              width={600}
-              height={600}
-            ></Image>
-            <Image
-              className={styles.funImage}
-              src="/laquinta/pastel-de-nata.png"
-              alt="pasted de nata"
-              width={600}
-              height={600}
-            ></Image>
+            <div className={styles.mainImage}>
+              <Image
+                className={styles.Image}
+                src="/laquinta/roasted-chicken.png"
+                alt="chicken"
+                fill
+              ></Image>
+            </div>
+            <div className={styles.mainImage}>
+              <Image
+                className={styles.Image}
+                src="/laquinta/potatoes.png"
+                alt="chicken"
+                fill
+              ></Image>
+            </div>
+            <div className={styles.mainImage}>
+              <Image
+                className={styles.Image}
+                src="/laquinta/pastel-de-nata.png"
+                alt="pasted de nata"
+                fill
+              ></Image>
+            </div>
           </div>
 
           <div className={styles.horaireAddressContainer}>

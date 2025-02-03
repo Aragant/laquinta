@@ -167,6 +167,19 @@
   gap: 10rem;
 }
 
+.mainImage {
+  position: relative;
+
+  width: 35rem;
+  height: 35rem;
+}
+
+.mainImage > * {
+  object-fit: contain;
+}
+
+
+
 .horaireAddressContainer {
   margin-top: 15rem;
   display: flex;
@@ -290,86 +303,13 @@
 
 
 
-/* @media (max-width: 600px) {
-  .header {
-    width: 100vw;
-  }
-
-
+ @media (max-width: 600px) {
 
   #followHeader {
     display: none;
   }
 
-  .funImage{
-    max-width: 13em;
-    object-fit: scale-down;
-  }
-
-  .main {
-    align-items: center;
-  }
-
-  .mainImageContainer{
-    gap: 16px;
-  }
-
-  a.secondary {
-    min-width: auto;
-  }
-
-  .footer {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
 }
 
-@media (max-width:480px){
-  #carteHeader {
-    font-size: 1.9em;
-  }
 
-  #logo {
-    max-height: 105px;
-    max-width: 105px;
-    padding-left: 5px;
-  }
-
-  .logoContainer{
-    display: flex;
-  }
-
-
-  .mainTitle{
-    font-size: 18vw;
-  }
-
-  .mainSubtitle{
-    font-size: 9.7vw;
-  }
-
-  .roundedEdge{
-    height: 8.7vw;
-    font-size: 1.3vw;
-  }
-
-  .roudedSecondBorder{
-    height: 9vw;
-  }
-
-  .roundedFirstBorder{
-    height: 10vw;
-  }
-
-
-  .funImage{
-    height: auto;
-    margin-bottom: 64px;
-  }
-
-  .horaireAddressContainer{
-    margin-top: 64px;
-  }
-} */
 
