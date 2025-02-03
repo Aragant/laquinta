@@ -48,6 +48,7 @@
 
 #logo {
   padding: 16px;
+  object-fit: scale-down;
 }
 
 .main {
@@ -85,7 +86,8 @@
 }
 
 .mainTitle {
-  font-size: 374px;
+  /* font-size: 374px; */
+  font-size: 14.6vw;
   font-weight: 900;
   text-align: center;
   color: var(--primary);
@@ -94,7 +96,9 @@
 
 .mainSubtitle {
   font-family: "MsMadi", sans-serif;
-  font-size: 224px;
+  /* font-size: 224px; */
+  font-size: 8.7vw;
+
   text-align: center;
   text-align: center;
   color: var(--secondary);
@@ -105,7 +109,7 @@
 .mainSubtitleContainer {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: self-start;
   justify-content: space-between	;
 }
 
@@ -114,11 +118,11 @@
   justify-content: center;
   align-items: center;
   color: var(--background);
-  font-size: 24px;
+  font-size: 0.95vw;
   font-weight: 600;
   text-align: center;
 
-  height: 150px;
+  height: 5.9vw;
   aspect-ratio: 3/2;
    /* update the 85% to control the curvature */
   clip-path: ellipse(60% 50%);
@@ -132,7 +136,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 155px;
+  height: 6.1vw;
   aspect-ratio: 3/2;
    /* update the 85% to control the curvature */
   clip-path: ellipse(60% 50%);
@@ -144,7 +148,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 170px;
+  height: 6.5vw;
   aspect-ratio: 3/2;
    /* update the 85% to control the curvature */
   clip-path: ellipse(60% 50%);
@@ -174,13 +178,15 @@
 .horaireTitle {
   text-align: center;
   font-family: 'MsMadi', sans-serif;
-  font-size: 64px;
+  /* font-size: 64px; */
+  font-size: 2.8vw;
   color: var(--secondary);
 }
 
 .weekTitle {
   text-align: center;
-  font-size: 42px;
+  /* font-size: 42px; */
+  font-size: 1.65vw;
   font-weight: 600;
   color: var(--primary);
 }
@@ -188,7 +194,9 @@
 .weekHoraire {
   font-family: 'MsMadi', sans-serif;
   text-align: center;
-  font-size: 48px;
+  /* font-size: 48px; */
+  font-size: 1.88vw;
+
   font-weight: 900;
   color: var(--secondary);
 }
@@ -196,13 +204,68 @@
 .addressText {
   padding: 0px 64px;
   text-align: center;
-  font-size: 32px;
-  font-weight: 600;
+  /* font-size: 32px; */
+  font-size: 1.25vw;
+
+  font-weight: 700;
   color: var(--primary);
 }
 
 .bomApetite {
   margin-top: 64px;
+}
+
+.funContainer{
+  margin-top: 256px;
+  width: 100%;
+  min-height: 512px;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+
+.funTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.funSubTextContainer{
+  display: flex;
+  flex-direction: column;
+  line-height: 0.8;
+  
+}
+
+.funText {
+  align-self: center;
+  font-size: 2.8rem;
+  font-weight: 600;
+  font-family: "MsMadi", sans-serif;
+  color: var(--secondary);
+}
+
+
+
+.funFood{
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1;
+}
+
+.funTextMidle{
+  padding-right: 350px;
+}
+
+.funImageContainer{
+  z-index: -20;
+  position: relative; /* Obligatoire pour que fill fonctionne */
+  height: 100%;
 }
 
 .textPresentation {
@@ -221,13 +284,27 @@
 }
 
 @media (max-width: 600px) {
-  .page {
-    padding: 32px;
-    padding-bottom: 80px;
+  .header {
+    width: 100vw;
+  }
+
+
+
+  #followHeader {
+    display: none;
+  }
+
+  .funImage{
+    max-width: 13em;
+    object-fit: scale-down;
   }
 
   .main {
     align-items: center;
+  }
+
+  .mainImageContainer{
+    gap: 16px;
   }
 
   a.secondary {
@@ -238,6 +315,54 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+  }
+}
+
+@media (max-width:480px){
+  #carteHeader {
+    font-size: 1.9em;
+  }
+
+  #logo {
+    max-height: 105px;
+    max-width: 105px;
+    padding-left: 5px;
+  }
+
+  .logoContainer{
+    display: flex;
+  }
+
+
+  .mainTitle{
+    font-size: 18vw;
+  }
+
+  .mainSubtitle{
+    font-size: 9.7vw;
+  }
+
+  .roundedEdge{
+    height: 8.7vw;
+    font-size: 1.3vw;
+  }
+
+  .roudedSecondBorder{
+    height: 9vw;
+  }
+
+  .roundedFirstBorder{
+    height: 10vw;
+  }
+
+
+  .funImage{
+    height: auto;
+    margin-bottom: 64px;
+  }
+
+  .horaireAddressContainer{
+    margin-top: 64px;
   }
 }
 

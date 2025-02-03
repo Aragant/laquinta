@@ -46,40 +46,50 @@ export default function Home() {
           >
             <h1 className={styles.mainTitle}>La Quinta</h1>
             <div className={styles.mainSubtitleContainer}>
-
-            <div className={styles.roundedFirstBorder}>
-              <div className={styles.roudedSecondBorder}>
-                <div className={styles.roundedEdge}> CONFLANS<br />ST<br />HONORINE</div>
+              <div className={styles.roundedFirstBorder}>
+                <div className={styles.roudedSecondBorder}>
+                  <div className={styles.roundedEdge}>
+                    {" "}
+                    CONFLANS
+                    <br />
+                    ST
+                    <br />
+                    HONORINE
+                  </div>
+                </div>
               </div>
-            </div>
 
               <h2 className={styles.mainSubtitle}>traiteur portugais</h2>
 
               <div className={styles.roundedFirstBorder}>
-              <div className={styles.roudedSecondBorder}>
-                <div className={styles.roundedEdge}>SINCE<br />2025</div>
+                <div className={styles.roudedSecondBorder}>
+                  <div className={styles.roundedEdge}>
+                    SINCE
+                    <br />
+                    2025
+                  </div>
+                </div>
               </div>
             </div>
-            </div>
-
-
-            
           </div>
 
           <div className={styles.mainImageContainer}>
             <Image
+              className={styles.funImage}
               src="/laquinta/roasted-chicken.png"
               alt="chicken"
               width={600}
               height={600}
             ></Image>
             <Image
+              className={styles.funImage}
               src="/laquinta/potatoes.png"
               alt="chicken"
               width={600}
               height={600}
             ></Image>
             <Image
+              className={styles.funImage}
               src="/laquinta/pastel-de-nata.png"
               alt="pasted de nata"
               width={600}
@@ -88,23 +98,58 @@ export default function Home() {
           </div>
 
           <div className={styles.horaireAddressContainer}>
-            <h2 className={styles.horaireTitle}>
-              Nos Horaire
-            </h2>
+            <h2 className={styles.horaireTitle}>Nos Horaire</h2>
             <h3 className={styles.weekTitle}>MERCREDI AU VENDREDI</h3>
             <p className={styles.weekHoraire}>10h - 14h / 15h30 - 20h</p>
             <h3 className={styles.weekTitle}>SAMEDI</h3>
             <p className={styles.weekHoraire}>9h - 14h / 15h30 - 20h</p>
             <h3 className={styles.weekTitle}>DIMANCHE</h3>
             <p className={styles.weekHoraire}>9h - 14h</p>
-            <p className={styles.addressText}>20 RUE MAURICE BERTEAUX,<br />78700 CONFLANS-SAINT-<br />HONORINE</p>
+            <p className={styles.addressText}>
+              20 RUE MAURICE BERTEAUX,
+              <br />
+              78700 CONFLANS-SAINT-
+              <br />
+              HONORINE
+            </p>
 
-            <Image className={styles.bomApetite} src={"/laquinta/bomApetite.png"} alt="bom apetite" width={300} height={200}></Image>
-
+            {/* <Image
+              className={styles.bomApetite}
+              src={"/laquinta/bomApetite.png"}
+              alt="bom apetite"
+              width={300}
+              height={200}
+            ></Image> */}
           </div>
 
+          {/* <div className={styles.funContainer}>
+            <div className={styles.funTextContainer}>
+              <div className={styles.funSubTextContainer}>
+                <p className={styles.funText}>Nous avons des...</p>
+                <p className={styles.funFood}>POULETS</p>
+              </div>
 
-          <p className={styles.textPresentation}>
+              <div className={`${styles.funSubTextContainer} ${styles.funTextMidle}`}>
+                <p className={styles.funText}>Nous avons des...</p>
+                <p className={styles.funFood}>PATATES</p>
+              </div>
+
+              <div className={styles.funSubTextContainer}>
+                <p className={styles.funText}>Nous avons des...</p>
+                <p className={styles.funFood}>POULET AVEC<br />DES PATATES</p>
+              </div>
+            </div>
+            <div className={styles.funImageContainer}>
+              <Image
+                fill
+                src="/laquinta/portugeseFoodVint.jpg"
+                alt="Picture of vintage portuguese food"
+                style={{ objectFit: "cover" }}
+              ></Image>
+            </div>
+          </div> */}
+
+          {/* <p className={styles.textPresentation}>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi
             sed animi facere et commodi consectetur aliquam voluptatum ullam
             reprehenderit iusto, molestias fugit incidunt! Dignissimos beatae
@@ -116,7 +161,7 @@ export default function Home() {
             animi facere et commodi consectetur aliquam voluptatum ullam
             reprehenderit iusto, molestias fugit incidunt! Dignissimos beatae
             dolorem quo modi nobis vero.
-          </p>
+          </p> */}
 
           <div className={styles.bigDiv}></div>
         </div>
