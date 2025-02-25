@@ -1,7 +1,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --with-bcg: #F8F4E9;
+  --bcg-1: #F8F4E9;
+  --bcg-2: #82290B;
+  --bcg-3: #CC5B01;
   --red-sign: #D53D31;
 }
 

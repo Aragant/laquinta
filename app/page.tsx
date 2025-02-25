@@ -26,6 +26,10 @@ export default function Home() {
                 <p className={styles.signatureDescription}>Bem-vindo</p>
             </div>
         </div>
+
+        <div className={styles.horraireDiv}>
+
+        </div>
       </main>
     </div>
   );
