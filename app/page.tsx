@@ -27,8 +27,14 @@ export default function Home() {
             </div>
         </div>
 
-        <div className={styles.horraireDiv}>
-
+        <div className={styles.horaireDiv}>
+            <div className={styles.ticketHoraire}>
+                <div className={styles.layerHoraire}>
+                    <h2 className={styles.titleHoraire}>
+                        NOS HORAIRES
+                    </h2>
+                </div>
+            </div>
         </div>
       </main>
     </div>
