@@ -1,37 +1,94 @@
-.page {
-  --gray-rgb: 0, 0, 0;
-  --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
-  --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
-
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-
-  display: grid;
-  grid-template-rows: 20px 1fr 20px;
-  align-items: center;
-  justify-items: center;
-  min-height: 100svh;
-  padding: 80px;
-  gap: 64px;
-  font-family: var(--font-geist-sans);
+@font-face {
+  font-family: "basiersquaremono";
+  src: url("/fonts/basiersquaremono-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  .page {
-    --gray-rgb: 255, 255, 255;
-    --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
-    --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
 
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-  }
+
+.page {
+  caret-color: transparent;
+}
+
+.header {
+  height: 0px;
+  position: sticky !important;
+  top: 0;
+  z-index: 1000;
 }
 
 .main {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  grid-row-start: 2;
+  justify-content: center;
+  align-items: center;
 }
 
+.titleDiv {
+  position: relative;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.titleDiv .quintaLogo {
+  position: relative;
+  width: 60vw;
+  aspect-ratio: 220 / 109;
+}
+
+.titleDiv .subtitle {
+  font-family: 'basiersquaremono';
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 2.65vw;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.descriptionDiv {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/laquinta-descriptiondiv-BCG.jpg");
+  background-size: cover;
+
+  background-position: center;
+}
+
+.ticketDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 20px;
+  width: 80vw;
+  height: 65vh;
+  background-color: var(--with-bcg);
+  color: black;
+  text-align: center;
+}
+
+.titleDescription {
+  font-family: "basiersquaremono";
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 3.18vw;
+
+
+}
+
+.textDescription {
+}
+
+.signatureDescription {
+  color: var(--red-sign);
+}
