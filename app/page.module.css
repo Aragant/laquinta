@@ -19,12 +19,20 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "spectral";
+  src: url("/fonts/Spectral-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 .page {
   caret-color: transparent;
 }
 
 .header {
+  display: none;
   height: 0px;
   position: sticky !important;
   top: 0;
@@ -64,7 +72,11 @@
   margin-top: 8px;
 }
 
+
+/* DESCRIPTION PART */
+
 .descriptionDiv {
+  z-index: 2000;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -120,7 +132,11 @@
   margin-bottom: -10px;
 }
 
+
+/* HORRAIRE PART */
+
 .horaireDiv {
+  position: relative;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -131,7 +147,59 @@
   background-color: var(--bcg-3);
 }
 
+.imageFramed {
+  border: solid 12px var(--bcg-1);
+}
+
+.vinoServed {
+  position: absolute;
+  z-index: 100;
+  top: -13vw;
+  left: -25vw;
+  width: 68vw;
+  transform: rotate(16.11deg);
+}
+
+.vinoServedImage {
+  position: relative !important;
+  aspect-ratio: 2713 / 4096;
+}
+
+.pastel{
+  position: absolute;
+  z-index: 201;
+  top: -10vw;
+  right: -19vw;
+
+  width: 82vw;
+  transform: rotate(22.86deg);
+
+}
+
+.pastelImage {
+  position: relative !important;
+  aspect-ratio: 4096 / 2713;
+}
+
+.chickenRoast{
+  position: absolute;
+  z-index: 100;
+  bottom: -20vw;
+  left: -19vw;
+
+  width: 56vw;
+  transform: rotate(-32deg);
+
+}
+
+.chickenRoastImage {
+  position: relative !important;
+  aspect-ratio: 2713 / 4096;
+}
+
+
 .ticketHoraire {
+  z-index: 200;
   color: black;
   position: relative;
 
@@ -140,32 +208,140 @@
   justify-content: center;
   align-items: center;
 
-  width: 80vw;
+  width: 83vw;
+  height: 73.2vh;
   background-image: url("/horaire-ticket.png");
-  background-size: cover;
-
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   background-position: center;
-  aspect-ratio: 320 / 599;
+
+  padding: 20px;
 }
 
 
-.layerHoraire {
-  width: 90%;
-  height: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  background-color: var(--bcg-1);
-}
+
 
 .titleHoraire {
   font-family: "instrument-serif";
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 12.5vw;
+  font-size: 13.5vw;
   text-align: center;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   border-top: 1px dashed black;
   border-bottom: 1px dashed black;
+}
+
+.textHoraire {
+  padding: 0px 5px;
+  margin-top: 8px;
+  font-family: 'spectral';
+  font-size: 2.7vw;
+  line-height: 1;
+  text-align: center;
+}
+
+.horaireTable {
+  font-family: 'basier-square-mono';
+  margin-top: 15px;
+  border-collapse: collapse;
+}
+
+.dayHoraire {
+  text-align: center;
+  padding: 15px;
+}
+
+.dayNameHoraire {
+  margin-bottom: 6px;
+
+  font-weight: 800;
+  font-size: 4.2vw;
+  text-transform: uppercase;
+}
+
+.timeHoraire {
+  font-size: 3.5vw;
+  text-transform: uppercase;
+}
+
+.decoHoraire {
+  padding: 3px 20px 40px 3px;
+  font-family: 'basier-square-mono';
+  font-size: 2.7vw;
+  text-transform: uppercase;
+}
+
+.decoSignDiv{
+  position: relative;
+  width: 35vw;
+}
+
+.decoSign {
+  position: absolute;
+  width: 40vw;
+  top: 0;
+  left: -2.5vw;
+  color: var(--red-sign);
+  font-family: "southern-bay";
+  font-size: 9.5vw;
+  font-weight: normal;
+  line-height: 0.7;
+  text-align: center;
+  transform: rotate(-5.22deg);
+}
+
+
+/* PAUSE PART */
+
+.pauseDiv {
+  z-index: 1000;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: black;
+}
+
+.textPause {
+  font-family: "instrument-serif";
+  font-size: 18vw;
+  text-align: center;
+  line-height: 1.1;
+}
+
+.portuguesa {
+  margin: -4vw;
+  font-size: 10vw;
+  font-family: 'southern-bay';
+  background-color: #BC2321;
+  padding: 2vw 3vw;
+  border-radius: 10px;
+  transform: rotate(-4.43deg);
+}
+
+.vinoPresDiv {
+  z-index: 1000;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--bcg-4);
+}
+
+.vinoPresImage {
+  position: relative !important;
+  width: 80vw;
+  height: 60vh;
+  background-image: url("/laquinta-descriptiondiv-BCG.jpg");
+  background-size: cover;
+  background-position: center;
 }
