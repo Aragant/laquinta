@@ -14,7 +14,7 @@
 
 @font-face {
   font-family: "southern-bay";
-  src: url("/fonts/SouthernBay-Regular.ttf") format("truetype");
+  src: url("/fonts/SouthernBay-Alt.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -168,8 +168,8 @@
 .pastel{
   position: absolute;
   z-index: 201;
-  top: -10vw;
-  right: -19vw;
+  top: -39vw;
+  right: -29vw;
 
   width: 82vw;
   transform: rotate(22.86deg);
@@ -319,10 +319,12 @@
   font-size: 10vw;
   font-family: 'southern-bay';
   background-color: #BC2321;
-  padding: 2vw 3vw;
+  padding: 3vw 5vw;
   border-radius: 10px;
   transform: rotate(-4.43deg);
 }
+
+/* VINO PART */
 
 .vinoPresDiv {
   z-index: 1000;
@@ -344,4 +346,306 @@
   background-image: url("/laquinta-descriptiondiv-BCG.jpg");
   background-size: cover;
   background-position: center;
+}
+
+
+/* ADDRESS PART */
+
+
+.addressDiv {
+  color: black;
+
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("/laquinta-descriptiondiv-BCG.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cardAddress {
+  position: relative;
+  width: 80%;
+  height: 60%;
+  background-color: var(--bcg-1);
+}
+
+.portugalDiv {
+  z-index: 2000;
+  position: absolute;
+  height: 85%;
+  top: 0;
+  right: 0;
+
+  aspect-ratio: 260 / 423;
+}
+
+.textAddressDiv {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+
+  z-index: 3000;
+  position: absolute;
+
+  padding: 30px;
+}
+
+.titleAddress {
+  font-family: "instrument-serif";
+  font-weight: 400;
+  font-size: 10vw;
+  text-align: center;
+}
+
+.subtitleAddress {
+  font-family: "spectral";
+  font-size: 2.8vw;
+  margin-top: -8px;
+}
+
+.roundedTitleAddress {
+  font-family: "spectral";
+  font-size: 2.8vw;
+  margin: 15px 0px;
+
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 5px 10px;
+}
+
+.textStreetAddress{
+  font-family: "basier-square-mono";
+  text-transform: uppercase;
+  font-size: 5vw;
+}
+
+.textCityAddress {
+  margin-top: 20px;
+  font-family: "basier-square-mono";
+  text-transform: uppercase;
+  font-size: 5vw;
+}
+
+.lineAddress{
+  width: 100%;
+  border-width: thin;
+  color: black;
+  margin: 10px 0px;
+}
+
+.roudedEndText{
+  font-family: "spectral";
+  font-size: 2.8vw;
+  margin: 5px 0px;
+
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 5px 10px;
+}
+
+.textSignAddress{
+  font-family: 'southern-bay';
+  color: var(--red-sign);
+  font-size: 6vw;
+  transform: rotate(-4.17deg);
+  margin-top: 5px;
+}
+
+.endTextAddress{
+  position: absolute;
+  font-family: 'spectral';
+  font-size: 2vw;
+  margin-top: 20px;
+  bottom: 5px;
+}
+
+
+/* FOOTER PART */
+
+
+.footerDiv {
+  display: grid;
+  grid-template-rows: 5fr 3fr;
+
+  height: 100vh;
+  width: 100%;
+
+  overflow: hidden;
+}
+
+.infoFooterDiv{
+  position: relative;
+  background-color: var(--bcg-2);
+}
+
+
+.textFooterDiv {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.titleFooter{
+  margin-top: 13vh;
+  font-family: "southern-bay";
+  font-size: 18vw;
+  transform: rotate(-5.02deg);
+
+}
+
+.textFooter {
+  font-family: "basier-square-mono";
+  font-size: 3.5vw;
+  margin-top: 3vh;
+}
+
+.contactFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+  font-family: 'instrument-serif';
+  font-size: 9vw;
+  line-height: 1.1;
+  margin-top: 5vh;
+
+}
+
+.socialFooter {
+  border-collapse: collapse;
+  table-layout: fixed;
+
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+
+  font-family: 'basier-square-mono';
+  font-size: 2.5vw;
+}
+
+.textSocialFooter {
+
+  text-align: center;
+  vertical-align: middle;
+
+  border-bottom: transparent;
+  border-color: var(--bcg-1);
+  border-width: thin;
+
+}
+
+#firstCellSocialFooter {
+  border-left: transparent;
+  padding: 5px 5px;
+}
+
+#lastCellSocialFooter {
+  border-right: transparent;
+}
+
+
+.imageFooterDiv {
+  position: relative;
+  background-image: url("/playa-del-portugal.png");
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+.discountTicketFooter {
+  color: black;
+
+  position: absolute;
+  width: 50vw;
+  aspect-ratio: 194 / 313;
+  background-color: var(--bcg-1);
+
+  top: 5%;
+  left: 25%;
+  transform: rotate(-34.17deg);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.titleDiscountFooter {
+  font-family: 'instrument-serif';
+  font-size: 9vw;
+  margin-top: 20px;
+}
+
+.subtitleDiscountFooter{
+  font-family: 'spectral';
+  font-size: 3.5vw;
+  margin-top: -5px;
+}
+
+.circleDiscountDiv{
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0px 15px;
+}
+
+.subtitleDiscountFooter{
+  font-family: 'spectral';
+}
+
+.circleDiscount {
+  font-family: 'basier-square-mono';
+
+  margin-top: 5px;
+  width: calc(33.33% - 5px);
+  aspect-ratio: 1 / 1;
+  text-align: center;
+
+
+  border: solid 1px black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textEndDiscountFooter {
+  position: absolute;
+  font-family: 'basier-square-mono';
+  font-size: 2.5vw;
+  text-transform: uppercase;
+
+  bottom: 10px;
+
+}
+
+#redChickenDiv{
+  position: relative;
+  border-color: transparent;
+}
+
+.redChickenDiscount{
+  position: absolute;
+  width: 11vw;
+  aspect-ratio: 38 / 57;
+
+  transform: rotate(30deg);
 }
