@@ -7,7 +7,7 @@ export default function Horaires() {
           <div className={styles.vinoServed}>
             <Image
               className={`${styles.vinoServedImage} ${styles.imageFramed}`}
-              src={"/vino-served.jpg"}
+              src={"/laquinta/vino-served.jpg"}
               alt={"Picture for decorate the page"}
               fill={true}
             ></Image>
@@ -17,7 +17,7 @@ export default function Horaires() {
             <div className={styles.pastel}>
               <Image
                 className={`${styles.pastelImage} ${styles.imageFramed}`}
-                src={"/pastel.jpg"}
+                src={"/laquinta/pastel.jpg"}
                 alt={"Picture for decorate the page"}
                 fill={true}
               ></Image>
@@ -80,7 +80,7 @@ export default function Horaires() {
           <div className={styles.chickenRoast}>
             <Image
               className={`${styles.chickenRoastImage} ${styles.imageFramed}`}
-              src={"/chicken-roast.jpg"}
+              src={"/laquinta/chicken-roast.jpg"}
               alt={"Picture for decorate the page"}
               fill={true}
             ></Image>

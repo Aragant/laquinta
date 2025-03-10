@@ -69,7 +69,7 @@ export default function Footer() {
             <div className={styles.circleDiscount} id={styles.redChickenDiv}>
               <div className={styles.redChickenDiscount}>
                 <Image
-                  src={"/red-chicken.svg"}
+                  src={"/laquinta/red-chicken.svg"}
                   alt="Picture for decorate the page"
                   fill={true}
                 ></Image>

@@ -7,7 +7,7 @@ export default function Address() {
       <div className={styles.cardAddress}>
         <div className={styles.portugalDiv}>
           <Image
-            src={"/Portugal.png"}
+            src={"/laquinta/Portugal.png"}
             alt={"Picture for decorate the page"}
             fill={true}
           ></Image>
