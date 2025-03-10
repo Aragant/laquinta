@@ -1,0 +1,181 @@
+/* FOOTER PART */
+
+
+.footerDiv {
+    display: grid;
+    grid-template-rows: 5fr 3fr;
+  
+    height: 100vh;
+    width: 100%;
+  
+    overflow: hidden;
+  }
+  
+  .infoFooterDiv{
+    position: relative;
+    background-color: var(--bcg-2);
+  }
+  
+  
+  .textFooterDiv {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .titleFooter{
+    margin-top: 13vh;
+    font-family: "southern-bay";
+    font-size: 18vw;
+    transform: rotate(-5.02deg);
+  
+  }
+  
+  .textFooter {
+    font-family: "basier-square-mono";
+    font-size: 3.5vw;
+    margin-top: 3vh;
+  }
+  
+  .contactFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  
+    font-family: 'instrument-serif';
+    font-size: 9vw;
+    line-height: 1.1;
+    margin-top: 5vh;
+  
+  }
+  
+  .socialFooter {
+    border-collapse: collapse;
+    table-layout: fixed;
+  
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  
+    font-family: 'basier-square-mono';
+    font-size: 2.5vw;
+  }
+  
+  .textSocialFooter {
+  
+    text-align: center;
+    vertical-align: middle;
+  
+    border-bottom: transparent;
+    border-color: var(--bcg-1);
+    border-width: thin;
+  
+  }
+  
+  #firstCellSocialFooter {
+    border-left: transparent;
+    padding: 5px 5px;
+  }
+  
+  #lastCellSocialFooter {
+    border-right: transparent;
+  }
+  
+  
+  .imageFooterDiv {
+    position: relative;
+    background-image: url("/playa-del-portugal.png");
+    background-size: cover;
+    background-position: center;
+  
+  }
+  
+  
+  .discountTicketFooter {
+    color: black;
+  
+    position: absolute;
+    width: 50vw;
+    aspect-ratio: 194 / 313;
+    background-color: var(--bcg-1);
+  
+    top: 5%;
+    left: 25%;
+    transform: rotate(-34.17deg);
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .titleDiscountFooter {
+    font-family: 'instrument-serif';
+    font-size: 9vw;
+    margin-top: 20px;
+  }
+  
+  .subtitleDiscountFooter{
+    font-family: 'spectral';
+    font-size: 3.5vw;
+    margin-top: -5px;
+  }
+  
+  .circleDiscountDiv{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0px 15px;
+  }
+  
+  .subtitleDiscountFooter{
+    font-family: 'spectral';
+  }
+  
+  .circleDiscount {
+    font-family: 'basier-square-mono';
+  
+    margin-top: 5px;
+    width: calc(33.33% - 5px);
+    aspect-ratio: 1 / 1;
+    text-align: center;
+  
+  
+    border: solid 1px black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .textEndDiscountFooter {
+    position: absolute;
+    font-family: 'basier-square-mono';
+    font-size: 2.5vw;
+    text-transform: uppercase;
+  
+    bottom: 10px;
+  
+  }
+  
+  #redChickenDiv{
+    position: relative;
+    border-color: transparent;
+  }
+  
+  .redChickenDiscount{
+    position: absolute;
+    width: 11vw;
+    aspect-ratio: 38 / 57;
+  
+    transform: rotate(30deg);
+  }
+  
