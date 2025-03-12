@@ -89,7 +89,6 @@
   
   .lineAddress{
     width: 100%;
-    border-width: thin;
     color: black;
     margin: 10px 0px;
   }
@@ -114,9 +113,8 @@
   }
   
   .endTextAddress{
-    position: absolute;
     font-family: 'spectral';
     font-size: 2vw;
     margin-top: 20px;
-    bottom: 5px;
+    margin-bottom: -15px;
   }
