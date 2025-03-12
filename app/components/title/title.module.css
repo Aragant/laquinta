@@ -24,3 +24,13 @@
     margin-top: 8px;
   }
   
+
+  @media (min-width: 1024px) {
+    .titleDiv .quintaLogo {
+      width: 30vw;
+    }
+
+    .titleDiv .subtitle {
+      font-size: 1vw;
+    }
+  }
