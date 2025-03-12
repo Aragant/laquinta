@@ -34,7 +34,7 @@
   .pastel{
     position: absolute;
     z-index: 201;
-    top: -39vw;
+    top: -26%;
     right: -29vw;
   
     width: 82vw;
@@ -73,15 +73,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  
-    width: 83vw;
-    height: 73.2vh;
+
+    
+    /* height: 73.2vh; */
     background-image: url("/laquinta/horaire-ticket.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
   
-    padding: 20px;
+    padding: 40px 20px;
   }
   
   

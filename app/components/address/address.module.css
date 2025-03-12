@@ -19,8 +19,11 @@
   .cardAddress {
     position: relative;
     width: 80%;
-    height: 60%;
     background-color: var(--bcg-1);
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
   
   .portugalDiv {
@@ -43,7 +46,7 @@
     text-align: center;
   
     z-index: 3000;
-    position: absolute;
+    /* position: absolute; */
   
     padding: 30px;
   }
@@ -106,6 +109,7 @@
     color: var(--red-sign);
     font-size: 6vw;
     transform: rotate(-4.17deg);
+    margin: 5px;
     margin-top: 5px;
   }
   

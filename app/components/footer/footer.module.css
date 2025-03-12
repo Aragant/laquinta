@@ -179,3 +179,9 @@
     transform: rotate(30deg);
   }
   
+
+  @media (max-height: 700px) {
+    .titleFooter {
+      margin-top: 7vh;
+    }
+  }
