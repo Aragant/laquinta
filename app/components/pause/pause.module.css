@@ -29,3 +29,10 @@
     border-radius: 10px;
     transform: rotate(-4.43deg);
   }
+
+
+  @media (min-width: 1024px) {
+    .textPause {
+      font-size: 7rem;
+    }
+  }

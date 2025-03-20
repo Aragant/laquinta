@@ -1,5 +1,9 @@
 /* HORRAIRE PART */
 
+.horaireBigScreen {
+  display: none;
+}
+
 .horaireDiv {
     position: relative;
     height: 100vh;
@@ -155,4 +159,103 @@
     line-height: 0.7;
     text-align: center;
     transform: rotate(-5.22deg);
+  }
+
+
+  @media (min-width: 1024px) {
+    .horaireLittleScreen {
+      display: none;
+    }
+
+    .horaireBigScreen {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+
+    .ticketHoraire {
+
+      margin-left: 5%;
+      margin-right: 25%;
+      background-color: var(--bcg-1);
+      height: 100vh;
+    }
+
+    .titleHoraire {
+      font-size: 5.5vw;
+
+      border-top: 3px dashed black;
+      border-bottom: 3px dashed black;
+      line-height: 1.1;
+    }
+
+    .textHoraire {
+      font-size: 0.86vw;
+
+      margin-top: 25px;
+      margin-bottom: 10px;
+    }
+
+    .horaireTable {
+      width: 85%;
+    }
+
+    .dayHoraire {
+      padding: 30px 0px;
+    }
+
+    .dayNameHoraire {
+      font-size: 1.6rem;
+
+      margin-bottom: 10px;
+    }
+
+    .timeHoraire {
+      font-size: 1.4rem;
+    }
+
+    .decoHoraire {
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+      padding: 3px 50px 70px 3px;
+
+    }
+
+    .decoSign {
+      font-size: 4rem;
+      margin-left: 25%;
+      width: fit-content;
+    }
+
+    .imageDecoHoraire {
+      position: relative;
+      height: 100vh;
+    }
+    
+    .imageFramed {
+      border: solid 20px var(--bcg-1);
+    }
+    
+
+    .vinoServed {
+      width: 22vw;
+      top: 10vh;
+      left: 15vw;
+    }
+
+    .pastel {
+
+      width: 32vw;
+      top: 50vh;
+      left: 5vw;
+    }
+
+    .chickenRoast {
+      transform: rotate(-11.55deg);
+      z-index: 500;
+      width: 22vw;
+      top: 22vh;
+      left: -2vw;
+      bottom: auto;
+    }
   }
