@@ -1,6 +1,10 @@
 /* PAUSE PART */
 
-.productDiv {
+.productBigScreen {
+  display: none;
+}
+
+  .productLittleScreen {
     z-index: 1000;
     position: relative;
     height: 100vh;
@@ -33,6 +37,34 @@
 
   @media (min-width: 1024px) {
     .textProduct {
-      font-size: 7rem;
+      font-size: 11rem;
+      text-align: start;
+      margin-top: -10rem;
+      margin-left: 5rem;
+    }
+
+    .productLittleScreen {
+      display: none;
+    }
+
+    .productBigScreen {
+      z-index: 1000;
+      position: relative;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+
+      background-color: black;
+    }
+
+    .portuguesa {
+      font-size: 8rem;
+      align-self: flex-end;
+      margin-right: 25rem;
+      padding: 2rem 4rem;
+      border-radius: 2rem;
     }
   }

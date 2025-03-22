@@ -12,7 +12,13 @@ export default function Product() {
         <p className={styles.portuguesa}>Portuguesa</p>
       </div>
 
-      <div className={styles.productBigScreen}></div>
+      <div className={styles.productBigScreen}>
+        <p className={styles.textProduct}>
+            LES INCONTOURNABLES<br />DE LA CUISINE
+          </p>
+          <p className={styles.portuguesa}>Portuguesa</p>
+
+      </div>
     </div>
   );
 }
