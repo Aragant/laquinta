@@ -2,7 +2,7 @@ import styles from "./description.module.css";
 
 export default function Description() {
   return (
-    <div className={styles.descriptionDiv}>
+    <section className={styles.descriptionDiv}>
       <div className={styles.ticketDescription}>
         <h2 className={styles.titleDescription}>Présentation</h2>
         <p className={styles.textDescription}>
@@ -15,6 +15,6 @@ export default function Description() {
         </p>
         <p className={styles.signatureDescription}>Bem-vindo</p>
       </div>
-    </div>
+    </section>
   );
 }
