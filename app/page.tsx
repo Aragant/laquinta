@@ -1,6 +1,5 @@
 "use client";
 
-
 import { useRef } from "react";
 import Address from "./components/address/address";
 import Description from "./components/description/description";
@@ -15,19 +14,33 @@ export default function Home() {
   const containerRef = useRef<HTMLDivElement>(null);
 
   return (
-    <div className={styles.page}>
+    <div>
       <main className={styles.main}>
-
-      <div ref={containerRef} className={styles.container}>
-        <section className={styles.page}><Title /></section>
-        <section className={styles.page}><Description /></section>
-        <section className={styles.page}><Horaires /></section>
-        <section className={styles.page}><Product /></section>
-        <section className={styles.page}><VinoPres /></section>
-        <section className={styles.page}><Address /></section>
-        <section className={styles.page}><Footer /></section>
-      </div>
-
+        <div ref={containerRef} className={styles.container}>
+          <div className={styles.horizontalWrapper}>
+            <section className={styles.page}>
+              <Title />
+            </section>
+            <section className={styles.page}>
+              <Description />
+            </section>
+            <section className={styles.page}>
+              <Horaires />
+            </section>
+            <section className={styles.page}>
+              <Product />
+            </section>
+            <section className={styles.page}>
+              <VinoPres />
+            </section>
+            <section className={styles.page}>
+              <Address />
+            </section>
+            <section className={styles.page}>
+              <Footer />
+            </section>
+          </div>
+        </div>
       </main>
     </div>
   );

@@ -1,9 +1,5 @@
 
 .titleDiv {
-    scroll-snap-align: start;
-    position: relative;
-    top: 0;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
