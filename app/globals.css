@@ -55,3 +55,9 @@ td {
     color-scheme: dark;
   }
 }
+
+@media (min-width: 2400px) {
+  html {
+    font-size: 21px;
+  }
+}
