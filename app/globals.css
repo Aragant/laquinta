@@ -1,11 +1,11 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --bcg-1: #F8F4E9;
-  --bcg-2: #82290B;
-  --bcg-3: #CC5B01;
+  --bcg-1: #f8f4e9;
+  --bcg-2: #82290b;
+  --bcg-3: #cc5b01;
   --bcg-4: #645535;
-  --red-sign: #D53D31;
+  --red-sign: #d53d31;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -40,15 +40,11 @@ a {
   text-decoration: none;
 }
 
-
 th,
 td {
   border: 2px solid black;
   padding: 8px 10px;
 }
-
-  
-
 
 @media (prefers-color-scheme: dark) {
   html {
@@ -56,20 +52,20 @@ td {
   }
 }
 
-@media (min-width: 2200px) {
-  html {
-    font-size: 21px;
-  }
-}
-
-@media (min-width: 1800px) {
-  html {
-    font-size: 16px;
-  }
-}
-
 @media (min-width: 1024px) {
   html {
     font-size: 12px;
+  }
+
+  @media (min-width: 1800px) {
+    html {
+      font-size: 16px;
+    }
+  }
+
+  @media (min-width: 2200px) {
+    html {
+      font-size: 21px;
+    }
   }
 }
