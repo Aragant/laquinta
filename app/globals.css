@@ -54,7 +54,7 @@ td {
 
 @media (min-width: 1024px) {
   html {
-    font-size: 12px;
+    font-size: 10px;
     overflow-y: hidden;
   }
 
@@ -73,14 +73,14 @@ td {
   }
 }
 
-@media (min-width: 1800px) {
+@media (min-width: 1850px) {
   html {
-    font-size: 21px;
+    font-size: 16px;
   }
 }
 
-@media (min-device-width: 2200px) {
+@media (min-width: 2200px) {
   html {
-    font-size: 27px;
+    font-size: 21px;
   }
 }
