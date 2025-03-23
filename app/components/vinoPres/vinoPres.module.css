@@ -26,3 +26,13 @@
     border: solid 12px var(--bcg-1);
   }
   
+  @media (min-width: 1024px) {
+    .imageFramed {
+      border: solid 24px var(--bcg-1);
+    }
+
+    .vinoPresImage {
+      width: 55vw;
+      margin-top: 5rem;
+    }
+  }
