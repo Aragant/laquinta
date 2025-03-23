@@ -30,9 +30,9 @@ export default function Home() {
             <section className={styles.page}>
               <Product />
             </section>
-            <section className={styles.page}>
+            {/* <section className={styles.page}>
               <VinoPres />
-            </section>
+            </section> */}
             <section className={styles.page}>
               <Address />
             </section>

@@ -67,7 +67,7 @@
   .horizontalWrapper {
     display: flex;
     flex-direction: row;
-    width: 700vw;
+    width: 600vw;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
   }
