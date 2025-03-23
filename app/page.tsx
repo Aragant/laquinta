@@ -7,7 +7,7 @@ import Footer from "./components/footer/footer";
 import Horaires from "./components/horaires/horaires";
 import Product from "./components/product/product";
 import Title from "./components/title/title";
-import VinoPres from "./components/vinoPres/vinoPres";
+// import VinoPres from "./components/vinoPres/vinoPres";
 import styles from "./page.module.css";
 
 export default function Home() {

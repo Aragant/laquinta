@@ -61,6 +61,23 @@ td {
 }
 
 
+@media (min-width: 1300px) {
+  html {
+    font-size: 12px;
+    overflow-y: hidden;
+  }
+
+}
+
+@media (min-width: 1450px) {
+  html {
+    font-size: 13px;
+    overflow-y: hidden;
+  }
+
+}
+
+
 @media (min-width: 1600px) {
   html {
     font-size: 14px;
