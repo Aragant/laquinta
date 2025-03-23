@@ -41,20 +41,20 @@ export default function Horaires() {
                     Mercredi au vendredi
                   </h3>
                   <p className={styles.timeHoraire}>10h00 - 14h00</p>
-                  <p className={styles.timeHoraire}>15h30 - 20h00</p>
+                  <p className={styles.timeHoraire}>16h00 - 19h30</p>
                 </td>
               </tr>
               <tr>
                 <td className={styles.dayHoraire} colSpan={3}>
                   <h3 className={styles.dayNameHoraire}>Samedi</h3>
-                  <p className={styles.timeHoraire}>9h00 - 14h00</p>
-                  <p className={styles.timeHoraire}>15h30 - 20h00</p>
+                  <p className={styles.timeHoraire}>9h30 - 13h30</p>
+                  <p className={styles.timeHoraire}>15h30 - 19h30</p>
                 </td>
               </tr>
               <tr>
                 <td className={styles.dayHoraire} colSpan={3}>
                   <h3 className={styles.dayNameHoraire}>Dimanche</h3>
-                  <p className={styles.timeHoraire}>9h00-14h00</p>
+                  <p className={styles.timeHoraire}>9h00-13h00</p>
                 </td>
               </tr>
               <tr>

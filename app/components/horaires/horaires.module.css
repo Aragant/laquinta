@@ -182,7 +182,7 @@
     }
 
     .titleHoraire {
-      font-size: 5.5vw;
+      font-size: 6rem;
 
       border-top: 3px dashed black;
       border-bottom: 3px dashed black;
@@ -190,14 +190,14 @@
     }
 
     .textHoraire {
-      font-size: 0.86vw;
+      font-size: 0.9rem;
 
-      margin-top: 25px;
+      margin-top: 20px;
       margin-bottom: 10px;
     }
 
     .horaireTable {
-      width: 85%;
+      width: 82%;
     }
 
     .dayHoraire {
@@ -205,19 +205,19 @@
     }
 
     .dayNameHoraire {
-      font-size: 1.6rem;
+      font-size: 1.2rem;
 
       margin-bottom: 10px;
     }
 
     .timeHoraire {
-      font-size: 1.4rem;
+      font-size: 1.3rem;
     }
 
     .decoHoraire {
-      font-size: 1.2rem;
+      font-size: 1rem;
       margin-bottom: 40px;
-      padding: 3px 50px 70px 3px;
+      padding: 3px 50px 60px 3px;
 
     }
 
