@@ -10,12 +10,14 @@ export default function Footer() {
           <p className={styles.textFooter}>
             Spécialisé dans la nourriture
             <br />
-            portugaise, n’hésitez pas à nous
+            portugaise, n&apos;hésitez pas à nous
             <br />
             contacter si vous avez
             <br />
             des demandes particulières.
           </p>
+
+          <p className={styles.textFooterBigScreen}>Spécialisé dans la nourriture portugaise,<br/>n&apos;hésitez pas à nous contacter si vous avez<br/>des demandes particulières.</p>
         </div>
 
         <div className={styles.contactFooter}>

@@ -39,6 +39,10 @@
     font-size: 3.5vw;
     margin-top: 3vh;
   }
+
+  .textFooterBigScreen {
+    display: none;
+  }
   
   .contactFooter {
     display: flex;
@@ -202,4 +206,86 @@
     .redChickenDiscount{
       width: 9vw;
     }
+  }
+
+  @media (min-width: 1024px) {
+    .footerDiv{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .infoFooterDiv {
+      height: 100vh;
+    }
+
+    .titleFooter {
+      font-size: 9rem;
+      margin-top: 14rem;
+    }
+
+    .textFooter {
+      display: none;
+    }
+
+    .textFooterBigScreen {
+      display: block;
+      font-family: 'basier-square-mono';
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+
+    .contactFooter {
+      font-size: 5rem;
+      margin-top: 6rem;
+    }
+
+    .socialFooter {
+      font-size: 1rem;
+    }
+
+    .textSocialFooter {
+      padding: 1rem 1rem;
+    }
+
+
+    .discountTicketFooter {
+      width: 23rem;
+      top: 18%;
+      left: 27%;
+      transform: rotate(20.25deg);
+    }
+
+    .imageFooterDiv{
+    }
+
+    .circleDiscountDiv{
+      width: 85%;
+    }
+
+    .circleDiscount {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    .titleDiscountFooter{
+      margin-top: 2rem;
+      font-size: 3.5rem;
+    }
+
+    .subtitleDiscountFooter{
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .redChickenDiscount{
+      margin-top: 1.5rem;
+      width: 5rem;
+    }
+
+    .textEndDiscountFooter {
+      font-size: 0.8rem;
+      margin-top: 4rem;
+    }
+
+    
   }
